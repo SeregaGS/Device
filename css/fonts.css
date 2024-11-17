@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Raleway";
+  src: url("fonts/Raleway/Raleway-ExtraBold.woff2") format("woff2"),
+    url("fonts/Raleway/Raleway-ExtraBold.woff") format("woff"),
+    url("fonts/Raleway/Raleway-ExtraBold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik/Rubik-Regular.woff2") format("woff2"),
+    url("fonts/Rubik/Rubik-Regular.woff") format("woff"),
+    url("fonts/Rubik/Rubik-Regular.ttf") format("ttf");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Rubik";
+  src: url("fonts/Rubik/Rubik-Bold.woff2") format("woff2"),
+    url("fonts/Rubik/Rubik-Bold.woff") format("woff"),
+    url("fonts/Rubik/Rubik-Bold.ttf") format("ttf");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
