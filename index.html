@@ -790,57 +790,83 @@
       </div>
     </footer>
     <div class="popup">
-      <div class="popup__header">
-        <h2 class="popup__title">Доставка под заказ</h2>
-        <button class="popup__btn-close" type="button">
-          <span class="visually-hidden">Закрыть</span>
-          <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <g clip-path="url(#clip0_72911_634)">
-              <path
-                d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"
-                fill="black" />
-            </g>
-            <defs>
-              <clipPath id="clip0_72911_634">
-                <rect width="26" height="26" fill="white" />
-              </clipPath>
-            </defs>
-          </svg>
-        </button>
-      </div>
-      <form class="popup__form" method="GET" action="https://echo.htmlacademy.ru/">
-        <label class="popup__label popup__label--name" for="name">
-          <span class="popup__label-title">Ваше имя:</span>
-          <input class="popup__input" type="text" id="name" name="name" placeholder="Введите имя" required />
-        </label>
-        <label class="popup__label popup__label--email" for="email">
-          <span class="popup__label-title">Ваш e-mail:</span>
-          <input class="popup__input" id="email" name="email" placeholder="Введите e-mail" required type="email" />
-        </label>
-        <label class="popup__label popup__label--delivery" for="delivery">
-          <span class="popup__label-title">Что нужно привезти:</span>
-          <input
-            class="popup__input"
-            id="delivery"
-            name="delivery"
-            placeholder="В свободной форме"
-            required
-            type="email" />
-        </label>
-        <label class="popup__label popup__label--quantity" for="quantity">
-          <span class="popup__label-title">Количество:</span>
-          <div>
-            <button type="button">
-              <span class="visually-hidden">Убрать одну штуку</span>
-            </button>
-            <input type="number" name="quantity" id="quantity" value="1" min="1" max="10" />
-            <button type="button">
-              <span class="visually-hidden">Прибавить на одну штуку</span>
-            </button>
+      <div class="popup-wrap">
+        <div class="popup__header">
+          <h2 class="popup__title">Доставка под заказ</h2>
+          <button class="popup__btn-close" type="button">
+            <span class="visually-hidden">Закрыть</span>
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_72911_634)">
+                <path
+                  d="M26 2.36364L23.6364 0L13 10.6364L2.36364 0L0 2.36364L10.6364 13L0 23.6364L2.36364 26L13 15.3636L23.6364 26L26 23.6364L15.3636 13L26 2.36364Z"
+                  fill="black" />
+              </g>
+              <defs>
+                <clipPath id="clip0_72911_634">
+                  <rect width="26" height="26" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </button>
+        </div>
+        <form class="popup__form" method="GET" action="https://echo.htmlacademy.ru/">
+          <label class="popup__label popup__label--name" for="name">
+            <span class="popup__label-title">Ваше имя:</span>
+            <input class="popup__input" type="text" id="name" name="name" placeholder="Введите имя" required />
+          </label>
+          <label class="popup__label popup__label--email" for="email">
+            <span class="popup__label-title">Ваш e-mail:</span>
+            <input class="popup__input" id="email" name="email" placeholder="Введите e-mail" required type="email" />
+          </label>
+          <label class="popup__label popup__label--delivery" for="delivery">
+            <span class="popup__label-title">Что нужно привезти:</span>
+            <input
+              class="popup__input"
+              id="delivery"
+              name="delivery"
+              placeholder="В свободной форме"
+              required
+              type="email" />
+          </label>
+          <label class="popup__label popup__label--quantity" for="quantity">
+            <p class="popup__label-info">
+              <span class="popup__label-title">Количество:</span>
+              <button class="popup__info" type="button">
+                <svg width="4" height="13" viewBox="0 0 4 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_11518_3348)">
+                    <path d="M3 0.356934H1V2.35693H3V0.356934Z" fill="black" />
+                    <path d="M3 4.35693H1V12.3569H3V4.35693Z" fill="black" />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_11518_3348">
+                      <rect width="4" height="12" fill="white" transform="translate(0 0.356934)" />
+                    </clipPath>
+                  </defs>
+                </svg>
+              </button>
+            </p>
+            <div class="quantity__wrap">
+              <button class="quantity__button quantity__button--minus" type="button">
+                <span class="visually-hidden">Убрать одну штуку</span>
+              </button>
+              <input
+                class="popup__input quantity__number"
+                type="number"
+                name="quantity"
+                id="quantity"
+                value="1"
+                min="1"
+                max="10" />
+              <button class="quantity__button quantity__button--plus" type="button">
+                <span class="visually-hidden">Прибавить на одну штуку</span>
+              </button>
+            </div>
+          </label>
+          <div class="popup__button-wrap">
+            <button class="link link-btn popup__button" type="submit">Отправить</button>
           </div>
-        </label>
-        <button class="popup__button" type="submit">Отправить</button>
-      </form>
+        </form>
+      </div>
     </div>
   </body>
 </html>
