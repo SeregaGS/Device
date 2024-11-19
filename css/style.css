@@ -246,6 +246,7 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 .search__button {
   font-size: 16px;
+  font-weight: 400;
   color: var(--color-basic-one);
   border: 2px solid var(--color-basic-one);
   border-top-right-radius: 20px;
@@ -1244,14 +1245,14 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 50%;
   min-width: 18px;
   min-height: 18px;
-  max-width: 18px;
-  max-height: 18px;
   border-radius: 50%;
   border: 2px solid var(--color-basic-one);
   background-color: var(--color-basic-four);
   transform: translateY(-50%);
   cursor: pointer;
   z-index: 12;
+  -webkit-appearance: none;
+  appearance: none;
 }
 .range-toggle__button:not(:focus):hover {
   border-color: rgba(0, 0, 0, 0.5);
@@ -1403,6 +1404,8 @@ input[type="number"]::-webkit-inner-spin-button {
   z-index: 15;
   cursor: pointer;
   width: 100%;
+  -webkit-appearance: none;
+  appearance: none;
 }
 
 /* SORT */
