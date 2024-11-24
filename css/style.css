@@ -1230,31 +1230,36 @@ input[type="number"]::-webkit-inner-spin-button {
 .range-toggle {
   position: relative;
   width: 100%;
-  height: 2px;
-  background-color: var(--color-basic-three);
-  z-index: 10;
+  height: 18px;
+  display: flex;
+  align-items: center;
 }
 
+.range-toggle__visual-total {
+  position: relative;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-basic-three);
+  z-index: 11;
+}
 .range-toggle__visual {
   position: absolute;
   top: 0;
-  height: 2px;
+  height: inherit;
   background-color: var(--color-basic-one);
-  z-index: 11;
+  z-index: 12;
 }
+
 .range-toggle__button {
   position: absolute;
-  top: 50%;
-  width: 18px !important;
-  height: 18px !important;
+  top: 0;
+  width: 18px;
+  height: 18px;
   border-radius: 50%;
   border: 2px solid var(--color-basic-one);
   background-color: var(--color-basic-four);
-  transform: translateY(-50%);
   cursor: pointer;
-  z-index: 12;
-  -webkit-appearance: none;
-  appearance: none;
+  z-index: 13;
 }
 .range-toggle__button:not(:focus):hover {
   border-color: rgba(0, 0, 0, 0.5);
@@ -1276,6 +1281,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* FILTER */
 .filter {
   padding: 0px 58px 35px;
+  height: 100%;
 }
 .filter__title {
   margin-top: 25px;
