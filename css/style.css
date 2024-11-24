@@ -527,11 +527,13 @@ input[type="number"]::-webkit-inner-spin-button {
   display: flex;
 }
 .slider__control-btn {
+  box-sizing: border-box;
   width: 100%;
   height: inherit;
   border-radius: 50%;
   border: 2px solid var(--color-basic-one);
   background-color: transparent;
+  padding-inline: 0;
 }
 .slider__control-btn--active {
   background-color: var(--color-basic-one);
@@ -1255,6 +1257,7 @@ input[type="number"]::-webkit-inner-spin-button {
   top: 0;
   width: 18px;
   height: 18px;
+  padding-inline: 0;
   border-radius: 50%;
   border: 2px solid var(--color-basic-one);
   background-color: var(--color-basic-four);
