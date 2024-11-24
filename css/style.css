@@ -319,7 +319,7 @@ input[type="number"]::-webkit-inner-spin-button {
 
 .catalog-wrap {
   display: grid;
-  grid-template-columns: 295px 1fr;
+  grid-template-columns: 300px 1fr;
   gap: 50px;
   align-items: center;
   padding-bottom: 16px;
@@ -1223,8 +1223,10 @@ input[type="number"]::-webkit-inner-spin-button {
   background-color: var(--color-basic-five);
 }
 .catalog-grid-wrap {
-  display: grid;
-  grid-template-columns: 320px 1fr;
+  display: flex;
+  height: 100%;
+  /* display: grid;
+  grid-template-columns: 320px 1fr; */
 }
 /* RANGE */
 .range-toggle {
@@ -1281,7 +1283,7 @@ input[type="number"]::-webkit-inner-spin-button {
 /* FILTER */
 .filter {
   padding: 0px 58px 35px;
-  height: 100%;
+  width: 320px;
 }
 .filter__title {
   margin-top: 25px;
